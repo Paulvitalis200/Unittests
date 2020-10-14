@@ -8,7 +8,7 @@ class TestEmployeee(unittest.TestCase):
         self.emp_2 = Employee('Jane', 'Doe', 60000)
 
     def tearDown(self):
-        pass
+        print('\ntearDown\n')
 
     def test_email(self):
         self.assertEqual(self.emp_1.email, 'Paul.Vitalis@email.com')
